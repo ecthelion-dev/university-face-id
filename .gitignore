@@ -1,0 +1,94 @@
+# ---- OS ----
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# ---- Editors ----
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- Secrets & env ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+secrets/
+credentials*.json
+service-account*.json
+
+# ---- Node / JS ----
+node_modules/
+.pnpm-store/
+.pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+dist/
+build/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+coverage/
+.nyc_output/
+storybook-static/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ---- ML artefacts (never commit) ----
+*.onnx
+*.pt
+*.pth
+*.h5
+*.tflite
+*.caffemodel
+*.safetensors
+models/weights/
+
+# ---- Biometric data — must never be committed ----
+data/
+datasets/
+crops/
+embeddings/
+*.sqlite
+*.sqlite3
+*.db
+
+# ---- Logs / runtime ----
+logs/
+*.log
+tmp/
+.cache/
+uploads/
+
+# ---- Docker / local infra ----
+docker-compose.override.yml
+.docker/
