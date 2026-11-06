@@ -1,0 +1,24 @@
+[project]
+name = "university-face-id-ai"
+version = "0.1.0"
+description = "AI service for university employee face recognition and direction tracking"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic-settings",
+  "opencv-python-headless",
+  "numpy",
+  "onnxruntime",
+  "httpx",
+  "tenacity",
+  "python-multipart"
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
